@@ -1,8 +1,11 @@
 package TP4.controler;
 
+import TP4.view.Thermometer;
+
 public class Temperature {
     private TP4.model.Temperature model;
     private TP4.view.Temperature view = null;
+    private Thermometer thermometer = null;
     private EditTemp editTemp = new EditTempAdd1();
 
     public Temperature(TP4.model.Temperature model) {
@@ -50,4 +53,6 @@ public class Temperature {
     public void addView(TP4.view.Temperature view) {
         this.view = view;
     }
+
+    public void addThermometer(Thermometer thermometer) {this.thermometer = thermometer;}
 }

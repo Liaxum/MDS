@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Observable;
 
-public class TemperatureFarenheit extends Temperature{
+public class TemperatureFarenheit extends Temperature {
 
     public TemperatureFarenheit(TP4.model.Temperature model, TP4.controler.Temperature controller, int posX, int posY) {
         super("Temperature_Farenheit", model, controller, posX, posY);
