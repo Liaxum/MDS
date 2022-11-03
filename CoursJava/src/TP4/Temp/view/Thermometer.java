@@ -46,6 +46,6 @@ public class Thermometer implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        slider.setValue((int) model.getTemperature());
+        slider.setValue((int) controller.getTemperature());
     }
 }

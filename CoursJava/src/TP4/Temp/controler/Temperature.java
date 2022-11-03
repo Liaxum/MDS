@@ -48,6 +48,10 @@ public class Temperature {
         control();
     }
 
+    public double getTemperature() {
+        return model.getTemperature();
+    }
+
     public void control() {
         if (view != null) {
             if (model.getTemperature() > 40.0) view.enableWarningColor();
