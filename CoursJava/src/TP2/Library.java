@@ -19,6 +19,7 @@ public class Library {
 
     public static void allAuthor() {
         for (Document doc : documents) {
+            System.out.println("id: " + doc.getId());
             if (doc.getClass() == Book.class) System.out.println("Id: " + doc.getId() + " Author: " + ((Book) doc).getAuthor());
         }
         System.out.println();
