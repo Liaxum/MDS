@@ -11,17 +11,17 @@ import java.util.Observer;
 
 public class Thermometer implements Observer {
     protected Temperature model;
-    protected TP4.Temp.controler.Temperature controller;
-    private JFrame temperatureJFrame;
-    private JSlider slider;
+    protected TP4.Temp.controller.Temperature controller;
+    private final JFrame temperatureJFrame;
+    private final JSlider slider;
 
-    public Thermometer(Temperature model, TP4.Temp.controler.Temperature controller, int posX, int posY) {
+    public Thermometer(Temperature model, TP4.Temp.controller.Temperature controller, int posX, int posY) {
         this.model = model;
         this.controller = controller;
         temperatureJFrame = new JFrame("Thermometer");
         temperatureJFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         temperatureJFrame.add(new JLabel("Thermometer"), BorderLayout.NORTH);
-        slider = new JSlider(JSlider.VERTICAL, -20, 100, (int) model.getTemperature());
+        slider = new JSlider(JSlider.VERTICAL, -20, 100, (int) controller.getTemperature());
         slider.setMajorTickSpacing(10);
         slider.setMinorTickSpacing(1);
         slider.setPaintTicks(true);

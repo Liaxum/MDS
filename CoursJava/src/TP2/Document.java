@@ -1,8 +1,8 @@
 package TP2;
 
 public class Document {
-    private int id;
-    private String name;
+    private final int id;
+    private final String name;
 
     public Document(int id, String name) {
         this.id = id;

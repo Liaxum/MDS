@@ -6,8 +6,8 @@ import TP4.Temp.view.Thermometer;
 public class Main {
     public Main() {
         Temperature tempMod = new Temperature();
-        TP4.Temp.controler.Temperature tempContC = new TP4.Temp.controler.Temperature(tempMod);
-        TP4.Temp.controler.Temperature tempContF = new TP4.Temp.controler.Temperature(tempMod);
+        TP4.Temp.controller.Temperature tempContC = new TP4.Temp.controller.Temperature(tempMod);
+        TP4.Temp.controller.Temperature tempContF = new TP4.Temp.controller.Temperature(tempMod);
 
         TP4.Temp.view.TemperatureCelsius pvc = new TP4.Temp.view.TemperatureCelsius(tempMod, tempContC, 100, 200);
         TP4.Temp.view.TemperatureFarenheit pvf = new TP4.Temp.view.TemperatureFarenheit(tempMod, tempContF, 100, 350);

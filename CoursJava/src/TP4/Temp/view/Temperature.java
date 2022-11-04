@@ -7,15 +7,15 @@ import java.util.Observable;
 import java.util.Observer;
 
 public class Temperature implements Observer {
-    private String label;
+    private final String label;
     protected TP4.Temp.model.Temperature model;
-    protected TP4.Temp.controler.Temperature controller;
-    private JFrame temperatureJFrame;
-    private JTextField display = new JTextField();
-    private JButton upJButton = new JButton("+");
-    private JButton downJButton = new JButton("-");
+    protected TP4.Temp.controller.Temperature controller;
+    private final JFrame temperatureJFrame;
+    private final JTextField display = new JTextField();
+    private final JButton upJButton = new JButton("+");
+    private final JButton downJButton = new JButton("-");
 
-    public Temperature(String label, TP4.Temp.model.Temperature model, TP4.Temp.controler.Temperature controller, int posX, int posY) {
+    public Temperature(String label, TP4.Temp.model.Temperature model, TP4.Temp.controller.Temperature controller, int posX, int posY) {
         this.label = label;
         this.model = model;
         this.controller = controller;

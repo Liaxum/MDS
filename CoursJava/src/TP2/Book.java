@@ -1,8 +1,8 @@
 package TP2;
 
 public class Book extends Document{
-    private String author;
-    private int nbPages;
+    private final String author;
+    private final int nbPages;
 
 
     public Book(int id, String name, String author, int nbPages) {

@@ -6,7 +6,7 @@ import java.util.Observable;
 
 public class TemperatureFarenheit extends Temperature {
 
-    public TemperatureFarenheit(TP4.Temp.model.Temperature model, TP4.Temp.controler.Temperature controller, int posX, int posY) {
+    public TemperatureFarenheit(TP4.Temp.model.Temperature model, TP4.Temp.controller.Temperature controller, int posX, int posY) {
         super("Temperature_Farenheit", model, controller, posX, posY);
         this.setDisplay("" +  model.getTemperatureF());
         addUpListener(new ActionListener() {

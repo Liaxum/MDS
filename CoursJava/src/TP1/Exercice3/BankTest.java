@@ -3,8 +3,8 @@ package TP1.Exercice3;
 import java.util.Scanner;
 
 public class BankTest {
-    private static Bank bank = new Bank("Crédit Blésois");
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Bank bank = new Bank("Crédit Blésois");
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         boolean quit = false;

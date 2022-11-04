@@ -1,4 +1,4 @@
-package TP4.Temp.controler;
+package TP4.Temp.controller;
 
 public class EditTempAdd1 implements EditTemp {
     public double add(double temp) {

@@ -1,8 +1,8 @@
 package TP2;
 
 public class Dictionary extends Document {
-    private String language;
-    private int nbVolumes;
+    private final String language;
+    private final int nbVolumes;
 
     public Dictionary(int id, String name, String language, int nbVolumes) {
         super(id, name);

@@ -1,7 +1,8 @@
 package TP1.Exercice5;
 
 public class Glass {
-    private int quantity, capacity;
+    private int quantity;
+    private final int capacity;
 
     public Glass(int quantity, int capacity) {
         this.quantity = quantity;

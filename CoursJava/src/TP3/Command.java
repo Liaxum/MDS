@@ -8,9 +8,9 @@ enum Status {
 }
 
 public class Command {
-    private Client client;
-    private int id;
-    private ArrayList<Product> products;
+    private final Client client;
+    private final int id;
+    private final ArrayList<Product> products;
     private Status status;
 
     public Command(int id, Client client, ArrayList<Product> products, Status status) {

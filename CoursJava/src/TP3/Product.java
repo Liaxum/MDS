@@ -3,8 +3,10 @@ package TP3;
 import java.util.ArrayList;
 
 public class Product {
-    private String name, description;
-    private int quantity, price;
+    private final String name;
+    private final String description;
+    private int quantity;
+    private final int price;
 
     public Product(String name, String description, int quantity, int price) {
         this.name = name;

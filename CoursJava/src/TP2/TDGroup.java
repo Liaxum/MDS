@@ -3,8 +3,8 @@ package TP2;
 import java.util.ArrayList;
 
 public class TDGroup {
-    private String name;
-    private ArrayList<Student> students;
+    private final String name;
+    private final ArrayList<Student> students;
     private int nbStudent;
 
     public TDGroup(String name, int maxStudent) {

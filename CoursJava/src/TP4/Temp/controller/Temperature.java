@@ -1,12 +1,12 @@
-package TP4.Temp.controler;
+package TP4.Temp.controller;
 
 import TP4.Temp.view.Thermometer;
 
 public class Temperature {
-    private TP4.Temp.model.Temperature model;
+    private final TP4.Temp.model.Temperature model;
     private TP4.Temp.view.Temperature view = null;
     private Thermometer thermometer = null;
-    private EditTemp editTemp = new EditTempAdd1();
+    private final EditTemp editTemp = new EditTempAdd1();
 
     public Temperature(TP4.Temp.model.Temperature model) {
         this.model = model;

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Student {
-    private String name;
+    private final String name;
     private float[] grades = new float[10];
     private final Scanner scanner = new Scanner(System.in);
 
@@ -33,7 +33,7 @@ public class Student {
     }
 
     public Boolean accept() {
-        return this.average() >= 10 ? true : false;
+        return this.average() >= 10;
     }
 
     @Override

@@ -4,7 +4,6 @@ import java.util.Observable;
 
 public class Temperature extends Observable {
     private double temperature = 20;
-
     public double getTemperature() {
         return this.temperature;
     }

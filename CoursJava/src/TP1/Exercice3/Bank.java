@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class Bank {
-    private String name;
+    private final String name;
     private int nbAccounts;
-    private ArrayList<Account> accounts = new ArrayList<Account>(1000);
+    private final ArrayList<Account> accounts = new ArrayList<Account>(1000);
 
     public Bank(String name) {
         this.name = name;

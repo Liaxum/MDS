@@ -3,7 +3,8 @@ package TP1.Exercice6;
 import java.util.Objects;
 
 public class Point {
-    private float x, y;
+    private final float x;
+    private final float y;
 
     public Point(float x, float y) {
         this.x = x;
@@ -19,8 +20,7 @@ public class Point {
     }
 
     public boolean same(Point p) {
-        if (this.x == p.x && this.y == p.y) return true;
-        else return false;
+        return this.x == p.x && this.y == p.y;
     }
 
     public float distance(Point p) {

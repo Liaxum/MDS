@@ -1,6 +1,8 @@
 package TP4.RGBSelector.model;
 
-public class Color {
+import java.util.Observable;
+
+public class Color extends Observable {
     private int red, green, blue = 0;
 
     public int getRed() {
@@ -17,13 +19,19 @@ public class Color {
 
     public void setRed(int red) {
         this.red = red;
+        setChanged();
+        notifyObservers();
     }
 
     public void setGreen(int green) {
         this.green = green;
+        setChanged();
+        notifyObservers();
     }
 
     public void setBlue(int blue) {
         this.blue = blue;
+        setChanged();
+        notifyObservers();
     }
 }

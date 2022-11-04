@@ -3,10 +3,10 @@ package TP3;
 import java.util.ArrayList;
 
 public class Store {
-    private ArrayList<Product> products = new ArrayList<>();
-    private ArrayList<Client> clients = new ArrayList<>();
-    private ArrayList<Command> commands = new ArrayList<>();
-    private String name;
+    private final ArrayList<Product> products = new ArrayList<>();
+    private final ArrayList<Client> clients = new ArrayList<>();
+    private final ArrayList<Command> commands = new ArrayList<>();
+    private final String name;
 
     public Store(String name) {
         this.name = name;

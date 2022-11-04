@@ -6,7 +6,7 @@ import java.util.Observable;
 
 public class TemperatureCelsius extends Temperature{
 
-    public TemperatureCelsius(TP4.Temp.model.Temperature model, TP4.Temp.controler.Temperature controller, int posX, int posY) {
+    public TemperatureCelsius(TP4.Temp.model.Temperature model, TP4.Temp.controller.Temperature controller, int posX, int posY) {
         super("Temperature_Celsius", model, controller, posX, posY);
         this.setDisplay("" +  model.getTemperature());
         addUpListener(new ActionListener() {

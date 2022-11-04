@@ -3,8 +3,9 @@ package TP3;
 import java.util.ArrayList;
 
 public class Client {
-    private String name, nickname;
-    private int id;
+    private final String name;
+    private final String nickname;
+    private final int id;
     private ArrayList<Product> cart = new ArrayList<Product>();
 
     public Client(int id, String name, String nickname) {
