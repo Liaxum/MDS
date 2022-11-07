@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import java.util.Observable;
 import java.util.Observer;
 
-public class Temperature implements Observer {
+public abstract class Temperature implements Observer {
     private final String label;
     protected TP4.Temp.model.Temperature model;
     protected TP4.Temp.controller.Temperature controller;
