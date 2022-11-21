@@ -1,4 +1,4 @@
-package TP6;
+package TP6.Exercice1;
 
 public interface Stack {
     public boolean empty();

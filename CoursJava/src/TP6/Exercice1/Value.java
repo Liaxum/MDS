@@ -1,4 +1,4 @@
-package TP6;
+package TP6.Exercice1;
 
 public class Value {
     private String name;
@@ -6,7 +6,7 @@ public class Value {
 
     public Value(String name, int value) {
         this.name = name;
-        this.value = value
+        this.value = value;
     }
 
     @Override
