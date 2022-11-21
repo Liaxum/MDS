@@ -1,0 +1,2 @@
+package TP6;public class EmptyStackException {
+}
